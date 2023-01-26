@@ -12,8 +12,7 @@ function App() {
     document.body.setAttribute("data-bs-theme" , "dark");
   }else{
     setmode('light');
-    // document.body.classList.remove('bg-dark');
-    // document.body.style.Color = "white"
+
     document.body.setAttribute("data-bs-theme" , "light");
   }
  }
