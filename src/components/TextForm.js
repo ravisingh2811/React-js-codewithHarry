@@ -15,10 +15,11 @@ export default function TextForm(prop) {
 
 
 
-  const [text , setText] = useState('Enter text here');
+  const [text , setText] = useState('');
 
   return (
       <>
+    
       <div className="my-3">
          <h1>{prop.heading}</h1>
          <div className="mb-2">
@@ -28,12 +29,12 @@ export default function TextForm(prop) {
               <button className="btn btn-primary mx-2" onClick={handelUpCheck}>Conert uppercase</button>
               <button className="btn btn-primary mx-2" onClick={handelLoCheck}>Conert Lowercase</button>
       </div>
-        <div className="container my-3">
+      <div className="container my-3">
           <h2>Your Text Summary</h2>
           <p>{text.split(" ").length} words and {text.length} charcater</p>
           <h3>Preview</h3>
           <p>{text}</p>
-        </div>
+      </div>
           
       </>    
   )
